@@ -1,0 +1,19 @@
+.trailer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+}
+
+iframe {
+    margin: 10px 10px;
+}
+
+.trailer-item {
+    margin-bottom: 40px;
+}
+
+.trailer-item h1 {
+    text-align: center;
+}

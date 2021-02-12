@@ -1,0 +1,120 @@
+.main-nav {
+    /* position: fixed;
+    min-height: 50px; */
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 12px 0;
+}
+
+.main-nav .brand {
+    height: 50px;
+    display: inline-block;
+    cursor: default;
+}
+
+.main-nav .brand img {
+    height: 100%;
+}
+
+.main-nav .main-nav-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-nav .main-nav-holder .mobile-hamburger  {
+    font-size: 35px;
+    line-height: 50px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+}
+
+.main-nav .main-nav-holder .mobile-hamburger:hover {
+    color: rgb(233, 21, 21);
+}
+
+.main-nav .main-nav-holder .mobile-close {
+    font-size: 28px;
+    line-height: 50px;
+    cursor: pointer;
+    color: white;
+    text-align: right;
+    height: 50px;
+}
+
+.main-nav .open-menu-holder {
+    position: fixed;
+    background-color: rgb(233, 21, 21);
+    top: 0;
+    right: 0;
+    max-width: 480px;
+    width: 480px;
+    text-align: right;
+    padding: 12px 23px;
+    display: none;
+}
+
+.main-nav .open-menu-holder.open {
+    display: block;
+    z-index: 9999;
+}
+
+.main-nav .open-menu-holder.close {
+    display: none;
+}
+
+.main-nav .open-menu-holder .menu {
+    list-style: none;
+}
+
+.main-nav .open-menu-holder .menu .menu-item {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.main-nav .open-menu-holder .menu .menu-item a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+@media all and (min-width: 992px) {
+
+    .mobile-hamburger,
+    .mobile-close {
+        display: none;
+    }
+
+    .main-nav .open-menu-holder{
+        display: block;
+        position: static;
+        color: white;
+        width: auto;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .menu {
+        font-size: 30px;
+    }
+
+    .menu .menu-item {
+        display: inline-block;
+        margin: 0 40px;
+    
+    }
+
+    .main-nav .brand img {
+        height: 120%;
+        margin-top: 20px;
+    }
+    
+    .main-nav .open-menu-holder .menu .menu-item a:hover{
+        color: rgb(233, 21, 21);
+    }
+}
